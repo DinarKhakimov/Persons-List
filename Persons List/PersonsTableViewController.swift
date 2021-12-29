@@ -25,10 +25,10 @@ class PersonsTableViewController: UITableViewController {
         override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-            let nameAndS = persons[indexPath.row]
+            let person = persons[indexPath.row]
             
             var content = cell.defaultContentConfiguration()
-            content.text = nameAndS.name + " " + nameAndS.surname
+            content.text = person.name + " " + person.surname
             cell.contentConfiguration = content
             return cell
         }
