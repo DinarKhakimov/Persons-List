@@ -15,7 +15,7 @@ class InfoPerson: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "\(person.name) \(person.surname)"
+        title = "\(person.fullName)"
         phoneLabel.text = "\(person.phoneNumber)"
         emailLabel.text = "\(person.email)"
     }
